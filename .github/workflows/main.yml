@@ -40,8 +40,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: project
-        run: npm install
-
+        run: npm install && npm install -D typescript
       - name: Generate Android project
         working-directory: project
         run: npx cap add android
